@@ -1,0 +1,32 @@
+{
+  "name": "Tales From Tech Support Enchancement",
+  "short_name": "Reddit TFTS App",
+  "description": "Easily manage stories and posts in r/talesfromtechsupport",
+  "version": "1.0.0.0",
+  "manifest_version": 2,
+
+  "content_security_policy": "script-src 'self' https://cdn.mxpnl.com; object-src 'self'",
+ 
+  "icons": { },
+
+
+  "background": {
+    "page": "background.html"
+  },
+
+ "permissions": [ "webRequest" , "tabs",
+    "*://*.reddit.com/r/talesfromtechsupport",
+    "*://*.reddit.com/r/talesfromtechsupport/*",
+    "*://*.reddit.com/*" 
+ ],
+ "web_accessible_resources": [
+    "jquery.min.js"
+ ],
+ "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "css":[],
+      "js": ["jquery.min.js",  "main.js"]
+    }
+  ]
+}
