@@ -17,7 +17,8 @@
  "permissions": [ "webRequest" , "tabs",
     "*://*.reddit.com/r/talesfromtechsupport",
     "*://*.reddit.com/r/talesfromtechsupport/*",
-    "*://*.reddit.com/*" 
+    "*://*.reddit.com/*",
+    "http://127.0.0.1:8000/*"
  ],
  "web_accessible_resources": [
     "jquery.min.js",

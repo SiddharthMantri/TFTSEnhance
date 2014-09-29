@@ -20,6 +20,13 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 		} 
 	}	
 });
+chrome.tabs.onCreated.addListener(function(tabId, changeInfo, tab) {
+	if(tab.url.indexOf('r/talesfromtechsupport/comments/') > 0){
+		accTabId = tabId;
+	    localStorage['current_reddit_tab'] = accTabId;
+		chrome.tabs.sendRequest(accTabId, {command: "getCurrentThread"});
+	}	
+});
 chrome.extension.onConnect.addListener(function(port) {
 	port.onMessage.addListener(function(msg) {
 		if(msg.command == 'setBackgroundCode'){
