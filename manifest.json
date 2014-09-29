@@ -1,7 +1,7 @@
 {
-  "name": "Tales From Tech Support Enchancement",
-  "short_name": "Reddit TFTS App",
-  "description": "Easily manage stories and posts in r/talesfromtechsupport",
+  "name": "Tales From Tech Support Navigator",
+  "short_name": "Reddit TFTS Navigator",
+  "description": "Easily manage stories in r/talesfromtechsupport",
   "version": "0.0.0.1",
   "manifest_version": 2,
 
