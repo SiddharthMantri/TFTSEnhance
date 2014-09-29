@@ -30,7 +30,7 @@ chrome.tabs.onCreated.addListener(function(tabId, changeInfo, tab) {
 chrome.extension.onConnect.addListener(function(port) {
 	port.onMessage.addListener(function(msg) {
 		if(msg.command == 'setBackgroundCode'){
-			setBackgroundCode('ABCDE');
+			setBackgroundCode(' 0100100001100101011011000110110001101111');
 		}
 	});
 });

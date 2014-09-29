@@ -1,5 +1,3 @@
-// var server_url = 'some-url';
-var server_url = 'http://127.0.0.1:8000';
 var base_url = 'https://www.reddit.com/r/talesfromtechsupport'
 var port = chrome.extension.connect({
 	name : "hello"
