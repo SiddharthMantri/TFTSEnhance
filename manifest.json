@@ -2,7 +2,7 @@
   "name": "Tales From Tech Support Navigator",
   "short_name": "Reddit TFTS Navigator",
   "description": "Easily manage stories in r/talesfromtechsupport",
-  "version": "0.0.0.1",
+  "version": "0.0.0.2",
   "manifest_version": 2,
 
   "content_security_policy": "script-src 'self' https://cdn.mxpnl.com; object-src 'self'",
